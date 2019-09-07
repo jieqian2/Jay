@@ -84,7 +84,7 @@ scaler = preprocessing.StandardScaler().fit(X_train)
 X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 
-#plot results when k=21
+#plot results when k=14
 knn = KNeighborsClassifier(n_neighbors = 14)
 knn.fit(X_train, y_train)
 y_pred = knn.predict(X_test)
